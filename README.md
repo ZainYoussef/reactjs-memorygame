@@ -1,5 +1,9 @@
 This is a card-matching game built with React.js, where cards are flipped to find matching pairs. If two cards match, they turn green and remain fixed. If they don't match, they return to their previous position.
 
+Azure SWA URL:
+<h2>https://red-bush-0bc799103.5.azurestaticapps.net/<h2/>
+
+  
 ![chrome-capture-2024-9-17 (2)](https://github.com/user-attachments/assets/bed39cee-079c-4924-bd47-3a4fd65c336b)
 
 Game features:
