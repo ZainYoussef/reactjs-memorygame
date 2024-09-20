@@ -3,28 +3,11 @@ import "./App.css";
 import Cards from "./Components/Cards";
 import Congrats from "./Components/Congrats.jsx";
 import Controls from "./Components/Controls.jsx";
-
+import cardData from "./cardData.json"
 function App() {
-  const initialCards = [
-    { id: 1, name: "html", img: "/public/html.png", state: "" },
-    { id: 2, name: "html", img: "/public/html.png", state: "" },
-    { id: 3, name: "css", img: "/public/css.png", state: "" },
-    { id: 4, name: "css", img: "/public/css.png", state: "" },
-    { id: 5, name: "js", img: "/public/js.png", state: "" },
-    { id: 6, name: "js", img: "/public/js.png", state: "" },
-    { id: 7, name: "scss", img: "/public/scss.png", state: "" },
-    { id: 8, name: "scss", img: "/public/scss.png", state: "" },
-    { id: 9, name: "react", img: "/public/react.png", state: "" },
-    { id: 10, name: "react", img: "/public/react.png", state: "" },
-    { id: 11, name: "vue", img: "/public/vue.png", state: "" },
-    { id: 12, name: "vue", img: "/public/vue.png", state: "" },
-    { id: 13, name: "angular", img: "/public/angular.png", state: "" },
-    { id: 14, name: "angular", img: "/public/angular.png", state: "" },
-    { id: 15, name: "node", img: "/public/nodejs.png", state: "" },
-    { id: 16, name: "node", img: "/public/nodejs.png", state: "" },
-  ];
+  
 
-  const [cards, setCards] = useState([...shuffleItems(initialCards)]);
+  const [cards, setCards] = useState([...shuffleItems(cardData)]);
   const [gameOver, setGameOver] = useState(false);
   const [hintCardID, setHintCardID] = useState(null);
   const [hints, setHints] = useState(3);
@@ -53,7 +36,7 @@ function App() {
     setGameOver(false);
   }, 0); // Asynchronous delay
      
-    setCards([...shuffleItems(initialCards)]);
+    setCards([...shuffleItems(cardData)]);
     setHints(3);
   }
 
